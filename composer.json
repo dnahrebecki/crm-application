@@ -25,7 +25,8 @@
         "oro/crm-magento-embedded-contact-us": "2.x-dev",
         "oro/crm-mail-chimp": "2.x-dev",
         "oro/crm-dotmailer": "2.x-dev",
-        "oro/crm-zendesk": "2.x-dev"
+        "oro/crm-zendesk": "2.x-dev",
+        "graylog2/gelf-php": "^1.5"
     },
     "require-dev": {
         "sensio/generator-bundle": "3.1.2",

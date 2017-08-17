@@ -15,6 +15,13 @@ monolog:
             type:  stream
             path:  "%kernel.logs_dir%/%kernel.environment%.log"
             level: debug
+        logstash_handler:
+            type: gelf
+            publisher:
+                hostname: %logstash_host%
+                port: %logstash_port%
+            formatter: monolog.formatter.gelf_message
+            level: INFO
 
 twig:
     base_template_class: Oro\Bundle\UIBundle\Twig\Template
